@@ -1,0 +1,55 @@
+#N canvas 860 228 845 536 12;
+#X obj 414 190 t f b;
+#X obj 411 275 noteout;
+#X obj 411 245 makenote 127 50;
+#X obj 415 29 inlet;
+#X obj 573 90 random 2000;
+#X obj 110 116 vsl 30 50 0 127 0 0 empty empty Note 3 -9 0 10 -262144
+-1 -1 4900 1;
+#X floatatom 110 170 4 0 0 0 - - -;
+#X obj 144 116 vsl 30 50 1 127 0 0 empty empty Velo 3 -9 0 10 -262144
+-1 -1 4900 1;
+#X floatatom 144 170 4 0 0 0 - - -;
+#X obj 178 116 vsl 30 50 125 2000 0 0 empty empty Time 3 -9 0 10 -262144
+-1 -1 0 1;
+#X floatatom 178 170 4 0 0 0 - - -;
+#X obj 658 90 random 2;
+#X obj 415 55 t b b b;
+#X obj 116 208 hradio 25 1 0 2 empty empty Chan 12 -8 0 10 -262144
+-1 -1 0;
+#X obj 176 208 tgl 25 0 empty empty RandChan -12 -5 0 10 -262144 -1
+-1 0 1;
+#X obj 658 118 spigot;
+#X msg 657 174 0;
+#X msg 679 207 17;
+#X obj 657 149 sel 0 1;
+#X floatatom 595 341 5 0 0 0 - - -;
+#X floatatom 305 255 5 0 0 0 - - -;
+#X obj 414 90 random 127;
+#X obj 494 91 random 127;
+#X connect 0 0 2 0;
+#X connect 0 1 22 0;
+#X connect 2 0 1 0;
+#X connect 2 1 19 0;
+#X connect 2 1 1 1;
+#X connect 3 0 12 0;
+#X connect 4 0 2 2;
+#X connect 5 0 6 0;
+#X connect 5 0 21 1;
+#X connect 7 0 8 0;
+#X connect 7 0 22 1;
+#X connect 9 0 10 0;
+#X connect 11 0 15 0;
+#X connect 12 0 21 0;
+#X connect 12 1 4 0;
+#X connect 12 2 11 0;
+#X connect 13 0 18 0;
+#X connect 14 0 15 1;
+#X connect 15 0 13 0;
+#X connect 16 0 1 2;
+#X connect 17 0 1 2;
+#X connect 18 0 16 0;
+#X connect 18 1 17 0;
+#X connect 21 0 0 0;
+#X connect 22 0 2 1;
+#X coords 0 -1 1 1 120 150 2 100 100;
