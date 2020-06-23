@@ -1,0 +1,13 @@
+#N canvas 742 296 450 300 12;
+#X obj 58 37 inlet;
+#X obj 58 63 unpack;
+#X obj 58 89 ftom;
+#X obj 58 115 pack;
+#X obj 97 89 rmstodb;
+#X obj 58 141 outlet;
+#X connect 0 0 1 0;
+#X connect 1 0 2 0;
+#X connect 1 1 4 0;
+#X connect 2 0 3 0;
+#X connect 3 0 5 0;
+#X connect 4 0 3 1;
